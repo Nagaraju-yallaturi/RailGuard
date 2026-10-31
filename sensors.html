@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RailGuard | Sensors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="sensors">
+
+<div class="app">
+    <aside class="sidebar">
+        <div class="brand">
+            <span class="brand-icon">R</span>
+            <div><h2>RailGuard</h2><small>Railway Monitoring</small></div>
+        </div>
+
+        <p class="nav-heading">MAIN MENU</p>
+        <nav>
+            <a href="index.html" data-nav="dashboard">◫ Dashboard</a>
+            <a href="sensors.html" data-nav="sensors">◉ Sensors</a>
+            <a href="alerts.html" data-nav="alerts">⚑ Alerts</a>
+            <a href="gps.html" data-nav="gps">⌖ GPS Location</a>
+            <a href="system.html" data-nav="system">⚙ System</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <span class="small-dot"></span>
+            ESP32 Monitoring System
+        </div>
+    </aside>
+
+    <main class="main">
+        <header class="topbar">
+            <div>
+                <h1 id="pageTitle">Sensors</h1>
+                <p>Live railway track sensor monitoring</p>
+            </div>
+
+            <div class="header-actions">
+                <span id="bleStatus" class="connection disconnected">
+                    <span class="status-dot"></span>
+                    Disconnected
+                </span>
+                <button id="bleConnectBtn" class="primary-btn">
+                    Connect ESP32
+                </button>
+            </div>
+        </header>
+
+        <section class="page-content" id="pageContent"></section>
+    </main>
+</div>
+
+</body>
+</html>
